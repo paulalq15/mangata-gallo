@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+header > img {
+    display: block;
+    width: 80%;    
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    font-weight: bold;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    background-color: lightgray;
+    text-decoration: underline;
+}
+
+.banner {
+    position: relative;
+    background-image: url(../images/banner.webp);
+    background-size: cover;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner p{
+    font-size: 1.25rem;
+    bottom: 0;
+    position: absolute;
+    font-style: normal;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+article {
+    flex: 1;
+}
+
+#types {
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+    border-radius: 0.25rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem black; 
+}
+
+#types:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#types img {
+    width: 100%;    
+    height: 50%;
+    border-radius: 0.25rem;
+}
+
+article p {
+    display: block;
+    text-align: left;
+    line-height: 1.3;
+    font-style:italic;
+    word-wrap: break-word;
+}
+
+.learn{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.learn a {
+    text-decoration: none;
+    color: gray;
+}
+
+.learn a:hover {
+    text-decoration:underline;
+    color: black;
+    font-weight: bolder;
+}
+
+.diamond{
+    display: block;
+    margin-top: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%; 
+    animation: logo_animation 5s infinite linear;
+    text-align: center;
+}
+
+.diamond img{
+    text-align: center;
+}
+
+@keyframes logo_animation {
+    50% {transform: scale(1.5);}
+}
+
+footer{
+    margin: 1rem;
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
+div img {
+    text-align: center;
+}
